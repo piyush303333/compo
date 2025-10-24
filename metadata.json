@@ -1,0 +1,5 @@
+{
+  "name": "CPU Pro Compare",
+  "description": "An intelligent CPU comparison tool powered by Gemini. Enter two processor models to get a detailed side-by-side specification comparison and an expert recommendation.",
+  "requestFramePermissions": []
+}
