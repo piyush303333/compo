@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProcessorIcon = () => (
     <svg 
-        className="w-10 h-10 md:w-12 md:w-12 text-blue-400 mr-4"
+        className="w-10 h-10 md:w-12 md:h-12 text-cyan-400 mr-4 animate-pulse"
         viewBox="0 0 24 24" 
         fill="none" 
         stroke="currentColor" 
@@ -26,10 +26,10 @@ const ProcessorIcon = () => (
 
 const Header: React.FC = () => {
     return (
-        <header className="text-center p-4 md:p-6">
+        <header className="text-center p-4 md:p-6 my-8">
             <div className="flex justify-center items-center">
                 <ProcessorIcon />
-                <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">
+                <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">
                     CPU Pro Compare
                 </h1>
             </div>

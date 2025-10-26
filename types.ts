@@ -1,3 +1,10 @@
+import type {
+  FunctionDeclaration,
+  GenerateContentResponse,
+  GoogleGenAI,
+  Type,
+} from '@google/genai';
+
 export interface CpuSpec {
   model: string;
   cores: number | string;
@@ -5,10 +12,14 @@ export interface CpuSpec {
   baseClock: string;
   boostClock: string;
   tdp: string;
+  idlePower: string;
+  peakPower: string;
   l3Cache: string;
   socket: string;
   integratedGraphics: string;
   releaseDate: string;
+  cinebenchR23MultiCore: number | string;
+  cinebenchR23SingleCore: number | string;
 }
 
 export interface CpuComparison {
@@ -28,8 +39,12 @@ export interface GpuSpec {
   memoryType: string;
   boostClock: string;
   tdp: string;
+  idlePower: string;
+  peakPower: string;
   architecture: string;
   releaseDate: string;
+  timeSpyGraphicsScore: number | string;
+  portRoyalRayTracingScore: number | string;
 }
 
 export interface GpuComparison {
